@@ -47,7 +47,10 @@ def place_order():
     if not (symbol and volume and order_type is not None):
         return jsonify({"error": "symbol, volume and type are required"}), 400
 
-    result = client.send_market_order(symbol, float(volume), int(order_type), comment)
+    try:
+        result = client.send_market_order(symbol, float(volume), int(order_type), comment)
+    except (ValueError, TypeError):
+        return jsonify({"error": "volume and type must be valid numbers"}), 400
     return jsonify(result), 201
 
 if __name__ == "__main__":
