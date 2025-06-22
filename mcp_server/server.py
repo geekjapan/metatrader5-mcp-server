@@ -21,7 +21,14 @@ def connect():
     if not (login and password and server):
         return jsonify({"error": "login, password and server are required"}), 400
 
-    client = MT5Client(int(login), password, server)
+    try:
+        login_id = int(login)
+    except (ValueError, TypeError):
+        return jsonify({"error": "login must be a valid integer"}), 400
+
+    if client:
+        client.shutdown()
+    client = MT5Client(login_id, password, server)
     if not client.connect():
         return jsonify({"error": "failed to connect"}), 500
     return jsonify({"status": "connected"})
