@@ -6,7 +6,7 @@ This repository provides a minimal template for building a MetaTrader 5 MCP serv
 
 - Python 3.12 or later
 - Dependencies listed in `requirements.txt`
-- A running MetaTrader 5 terminal (the `MetaTrader5` Python package must be installed separately)
+- A running MetaTrader 5 terminal
 
 ## Setup
 
