@@ -21,5 +21,3 @@ python -m mcp_server.server
 - `POST /api/v1/connect` – initialize connection to MetaTrader 5.
 - `GET /api/v1/account` – fetch account information.
 - `POST /api/v1/orders` – send a market order using connected terminal.
-
-Feel free to extend these handlers with your own logic or build on top of the `MT5Client` class provided in `mcp_server.mt5_client`.

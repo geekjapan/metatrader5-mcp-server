@@ -10,7 +10,6 @@ app = Flask(__name__)
 def ping():
     return jsonify({"message": "pong"})
 
-
 @app.route("/api/v1/connect", methods=["POST"])
 def connect():
     """Initialize connection to MetaTrader 5 terminal."""
