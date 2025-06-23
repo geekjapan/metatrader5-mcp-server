@@ -1,2 +1,7 @@
 Flask>=2.0
+fastapi
+uvicorn
+websockets
+typer
+pydantic-settings
 MetaTrader5
