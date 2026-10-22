@@ -1,0 +1,22 @@
+{
+  "project": "metatrader5-mcp-server",
+  "source_commit": "ec1005aac1744e892c430365c3d99dc2427b37f3",
+  "source_tree_dirty": false,
+  "semantic_files": [
+    "README.md",
+    "requirements.txt"
+  ],
+  "pending_files": [],
+  "ast_status": "extracted",
+  "semantic_token_usage": "Native Codex session; per-project token usage unavailable. No separate inference API was used.",
+  "validation_issues": [],
+  "unresolved_edge_count": 0,
+  "body_reuse": [],
+  "warnings": [],
+  "unclassified_count": 1,
+  "excluded_or_conversion_failed": [],
+  "scope": "All Graphify-supported files discovered in this project; unsupported file extensions, ignored build/dependency directories and sensitive-name exclusions are not claimed as parsed.",
+  "unreadable_sources": [],
+  "media": [],
+  "office_conversions": []
+}
